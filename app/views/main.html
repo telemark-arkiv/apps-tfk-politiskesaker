@@ -1,0 +1,9 @@
+<div class="lead">
+    Her finner du alle dokumentene til de uilke utvalgsmøtene.<br/>
+    Ved å velge utvalg ser du oversikt over møtene. Alternativt kan gjøre et søk.
+</div>
+
+<div data-ng-repeat="u in utvalgsListe | orderBy:'utvnavn'">
+    <a href="#/utvalg/{{ u.utvid }}"><h2>{{ u.utvnavn }}</h2></a>
+    <p>Seneste møte: <a href="#/moter/{{u.moteid}}">{{ u.last_meeting}}</a></p>
+</div>
