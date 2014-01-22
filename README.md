@@ -9,26 +9,31 @@ Løsning for å vise politiske saker og møteprotokoller for utvalgene. Løsning
 
 political
 
-committees all Returns all committees
+utvalg all returnerer alle utvalg med dato og id for siste møte
 
-committeeid id Returns all meetings for committee
+utvid id returnerer alle møter for utvalg
 
-meetingid id Returns all cases and files
+moteid id returnerer alle saker og dokumenter for et gitt møte
 
-cases string Returns meetings with case
+sak string søker blant alle saker på tittel
+
+sakid id returnerer en gitt sak med dokumenter
 
 
 
-Examples
+Eksempler
 
-committees:
-http://ws.t-fk.no/?resource=political&search=committees&string=all
+utvalg:
+http://ws.t-fk.no/?resource=political&search=utvalg&string=all
 
-committeeid:
-http://ws.t-fk.no/?resource=political&search=committeeid&string=value
+utvid:
+http://ws.t-fk.no/?resource=political&search=utvid&string=value
 
-meetingid:
-http://ws.t-fk.no/?resource=political&search=meetingid&string=value
+moteid:
+http://ws.t-fk.no/?resource=political&search=moteid&string=value
 
-case:
-http://ws.t-fk.no/?resource=political&search=title&string=text
+sak:
+http://ws.t-fk.no/?resource=political&search=sak&string=text
+
+sakid:
+http://ws.t-fk.no/?resource=political&search=sakid&string=value
