@@ -1,0 +1,23 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Kontaktperson</h3>
+    </div>
+    <div class="panel-body">
+        <p>
+            <span class="glyphicon glyphicon-user"></span>
+            {{ kontaktperson.name }}
+        </p>
+        <p>
+            <span class="glyphicon glyphicon-envelope"></span>
+            <a href="mailto:{{ kontaktperson.mail }}" title="Send e-post til {{ kontaktperson.mail }}">{{ kontaktperson.mail }}</a>
+        </p>
+        <p>
+            <span class="glyphicon glyphicon-phone-alt"></span>
+            <a href="tel:+47{{ kontaktperson.phone }}" title="Ring telefonnr {{ kontaktperson.phone }}">{{ kontaktperson.phone }}</a>
+        </p>
+        <p>
+            <span class="glyphicon glyphicon-phone"></span>
+            <a href="tel:+47{{ kontaktperson.mobile }}" title="Ring mobilnr {{ kontaktperson.mobile }}">{{ kontaktperson.mobile }}
+        </p>
+    </div>
+</div>

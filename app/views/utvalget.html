@@ -1,14 +1,15 @@
 <h1>{{ utvalgsmoter[0].utvnavn}}</h1>
 
-<table class="table">
-    <thead>
+<div class="col-lg-9">
+    <table class="table">
+        <thead>
         <tr>
             <th>Dato</th>
             <th></th>
             <th>Vis</th>
         </tr>
-    </thead>
-    <tbody>
+        </thead>
+        <tbody>
         <tr data-ng-repeat="m in utvalgsmoter">
             <td>
                 <a href="#/moter/{{ m.moteid }}">{{ m.motedato }}</a>
@@ -20,5 +21,12 @@
                 <a href="#/moter/{{ m.moteid }}">Vis</a>
             </td>
         </tr>
-    </tbody>
-</table>
+        </tbody>
+    </table>
+</div>
+
+<div class="col-lg-3">
+    <div data-kontaktpersonbox></div>
+</div>
+
+<div class="clearfix"></div>

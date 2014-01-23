@@ -1,0 +1,45 @@
+{
+  "utvalg" : {
+    "720" : {
+      "name" : "Fylkestinget",
+      "kontaktperson" : "1"
+    },
+    "721" : {
+      "name" : "Fylkesutvalget",
+      "kontaktperson" : "1"
+    }
+
+  },
+  "kontaktperson" : {
+    "1" : {
+      "name": "Tora Karin Bjørbæk Olsen",
+      "mail": "tora.olsen@t-fk.no",
+      "phone": "35 91 72 49",
+      "mobile":"959 30 002"
+    },
+    "2" : {
+      "name": "Liss Haraldsen",
+      "mail": "liss.haraldsen@t-fk.no",
+      "phone": "35 91 73 06",
+      "mobile":"402 02 454"
+    },
+    "3" : {
+      "name": "Evy Halvdansdatter Wang",
+      "mail": "evy.halvdansdatter-wang@t-fk.no",
+      "phone": "35 91 72 29",
+      "mobile":"990 40 011"
+    },
+    "4" : {
+      "name": "Helèn Andersen",
+      "mail": "kirsten-helen.andersen@t-fk.no",
+      "phone": "35 91 72 24",
+      "mobile":"948 37 771"
+    },
+    "5" : {
+      "name": "Line Bosnes",
+      "mail": "line.bosnes@temark.no",
+      "phone": "",
+      "mobile":"906 56 426"
+    }
+  }
+}

@@ -1,9 +1,13 @@
 <div class="lead">
-    Her finner du alle dokumentene til de uilke utvalgsmøtene.<br/>
-    Ved å velge utvalg ser du oversikt over møtene. Alternativt kan gjøre et søk.
+    Her finner du saklister og dokumenter til de uilke utvalgsmøtene.<br/>
+    Ved å velge utvalg ser du oversikt over møtene.<br/>
+    Bruker du søkefeltet vil du søke blant saker.
 </div>
 
-<div data-ng-repeat="u in utvalgsListe | orderBy:'utvnavn'">
+<div data-ng-repeat="u in utvalgsListe | orderBy:'utvnavn'" class="well">
     <a href="#/utvalg/{{ u.utvid }}"><h2>{{ u.utvnavn }}</h2></a>
-    <p>Seneste møte: <a href="#/moter/{{u.moteid}}">{{ u.last_meeting}}</a></p>
+    <p>
+        <span class="glyphicon glyphicon-calendar"></span><strong> Seneste møte: </strong>  <a href="#/moter/10917">22.04.2013</a>
+        <span class="glyphicon glyphicon-calendar"></span><strong> Alle møter: </strong> <a href="#/utvalg/{{ u.utvid }}">Vis oversikt</a>
+    </p>
 </div>

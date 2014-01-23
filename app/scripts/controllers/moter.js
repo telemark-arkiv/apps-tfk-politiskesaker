@@ -22,4 +22,5 @@ angular.module('appsTfkPolitiskesakerApp')
         $scope.loading = false;
       });
 
+
   });
