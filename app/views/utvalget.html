@@ -1,5 +1,24 @@
 <h1>{{ utvalgsmoter[0].utvnavn}}</h1>
 
-<div data-ng-repeat="m in utvalgsmoter">
-    Dato: <a href="#/moter/{{ m.moteid }}">{{ m.motedato }}</a>
-</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Dato</th>
+            <th></th>
+            <th>Vis</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr data-ng-repeat="m in utvalgsmoter">
+            <td>
+                <a href="#/moter/{{ m.moteid }}">{{ m.motedato }}</a>
+            </td>
+            <td>
+                {{ m.motetittel }}
+            </td>
+            <td>
+                <a href="#/moter/{{ m.moteid }}">Vis</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

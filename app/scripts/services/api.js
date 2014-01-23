@@ -39,36 +39,10 @@ angular.module('appsTfkPolitiskesakerApp')
 
     apiservice.getMotet = function(moteid){
       var
-        json = {
-          'moteid' : 10881, 'motetittel' : 'Hovudutval for kompetanse 2013-11-07',
-          'motedato' : '07.11.2013', 'motested':'Norsjø hotell, Akkerhaugen',
-          'dokumenter': [
-            {'dokid' : '13044408', 'versjon' : 1, 'variant': 'A',
-            'tittel' : 'Sakspapirer - Møte i Hovudutval for kompetanse den 07.11.2013.',
-            'filnavn' : '13044408.PDF', 'mimetype':'application/pdf',
-            'dokmal' : 'RMB', 'dato': '28.10.2013'}
-          ],
-          'saker' : [
-            {'saksaar' : 2013, 'saksnr' : 31, 'sakstype' : 'PS', 'saksstatus' : 'BE',
-            'tittel' : '31/13 Presentasjon av hovudfunn i forskingsprosjektet SMIL - samanheng mellom IKT-bruk og læringsutbytte i vidaregåande opplæring',
-            'dokumenter': [
-              {'dokid' : 13041277, 'versjon' : 1, 'variant' : 'A',
-              'tittel' : 'Presentasjon av hovudfunn i forskingsprosjektet SMIL - samanheng mellom IKT-bruk og læringsutbytte i vidaregåande opplæring',
-              'filnavn': '13041277.PDF', 'mimetype':'application/pdf', 'dokmal':'S',
-              'dato':'08.10.2013'}
-            ]},
-            {'saksaar' : 2013, 'saksnr' : 31, 'sakstype' : 'PS', 'saksstatus' : 'BE',
-              'tittel' : '31/13 Presentasjon av hovudfunn i forskingsprosjektet SMIL - samanheng mellom IKT-bruk og læringsutbytte i vidaregåande opplæring',
-              'dokumenter': [
-                {'dokid' : 13041277, 'versjon' : 1, 'variant' : 'A',
-                  'tittel' : 'Presentasjon av hovudfunn i forskingsprosjektet SMIL - samanheng mellom IKT-bruk og læringsutbytte i vidaregåande opplæring',
-                  'filnavn': '13041277.PDF', 'mimetype':'application/pdf', 'dokmal':'S',
-                  'dato':'08.10.2013'}
-              ]}
-          ]
-        };
+        url = apiURLstart + '?resource=political&search=moteid&string=' + moteid + apiURLend,
+        call = $http({'method':'JSONP', 'url': url});
 
-      return json;
+      return call;
     };
 
     apiservice.search = function(query){
