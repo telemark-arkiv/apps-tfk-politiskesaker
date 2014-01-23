@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Tora Karin Bjørbæk Olsen",
+    "mail": "tora.olsen@t-fk.no",
+    "phone": "35 91 72 49",
+    "mobile":"959 30 002",
+    "utvalg":[
+      {"name":"Fylkestinget","id": "720"},
+      {"name":"Fylkesutvalget", "id": "721"}
+    ]
+  },
+  {
+    "name": "Liss Haraldsen",
+    "mail": "liss.haraldsen@t-fk.no",
+    "phone": "35 91 73 06",
+    "mobile":"402 02 454",
+    "utvalg":[
+      {"name":"Hovedutvalg for kompetanse","id": "733"},
+      {"name":"Telemark fylkeskommunale klagenemnd","id": "724"},
+      {"name":"Yrkesopplæringsnemda", "id": "713"}
+    ]
+  },
+  {
+    "name": "Evy Halvdansdatter Wang",
+    "mail": "evy.halvdansdatter-wang@t-fk.no",
+    "phone": "35 91 72 29",
+    "mobile":"990 40 011",
+    "utvalg":[
+      {"name":"Fylkeskommunalt råd for personer med nedsatt funksjonsevne", "id": "2520"},
+      {"name":"Hovedutvalg for samferdsel","id": "2620"},
+      {"name":"Hovedutvalg for kultur", "id": "2618"},
+      {"name":"Klagenemnd for skolesaker", "id": "22"},
+      {"name":"Telemark fylkeskommunale eldreråd", "id": "722"}
+    ]
+  },
+  {
+    "name": "Helèn Andersen",
+    "mail": "kirsten-helen.andersen@t-fk.no",
+    "phone": "35 91 72 24",
+    "mobile":"948 37 771",
+    "utvalg":[
+      {"name":"Administrasjonsutvalget","id": "714"},
+      {"name":"Forhandlingsutvalget", "id": "729"},
+      {"name":"Hovedutvalg for næringsutvikling", "id": "2619"}
+    ]
+  },
+  {
+    "name": "Line Bosnes",
+    "mail": "line.bosnes@temark.no",
+    "phone": "",
+    "mobile":"906 56 426",
+    "utvalg":[
+      {"name":"Kontrollutvalget","id": "9"}
+    ]
+  }
+]
