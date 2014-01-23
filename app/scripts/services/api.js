@@ -47,26 +47,9 @@ angular.module('appsTfkPolitiskesakerApp')
 
     apiservice.search = function(query){
       var
-        json = [
-          {'saksaar' : 2013, 'saksnr' : 31, 'sakstype' : 'PS', 'saksstatus' : 'BE',
-            'tittel' : '31/13 Presentasjon av hovudfunn i forskingsprosjektet SMIL - samanheng mellom IKT-bruk og læringsutbytte i vidaregåande opplæring',
-            'dokumenter': [
-              {'dokid' : 13041277, 'versjon' : 1, 'variant' : 'A',
-                'tittel' : 'Presentasjon av hovudfunn i forskingsprosjektet SMIL - samanheng mellom IKT-bruk og læringsutbytte i vidaregåande opplæring',
-                'filnavn': '13041277.PDF', 'mimetype':'application/pdf', 'dokmal':'S',
-                'dato':'08.10.2013'}
-            ]},
-          {'saksaar' : 2013, 'saksnr' : 31, 'sakstype' : 'PS', 'saksstatus' : 'BE',
-            'tittel' : '31/13 Presentasjon av hovudfunn i forskingsprosjektet SMIL - samanheng mellom IKT-bruk og læringsutbytte i vidaregåande opplæring',
-            'dokumenter': [
-              {'dokid' : 13041277, 'versjon' : 1, 'variant' : 'A',
-                'tittel' : 'Presentasjon av hovudfunn i forskingsprosjektet SMIL - samanheng mellom IKT-bruk og læringsutbytte i vidaregåande opplæring',
-                'filnavn': '13041277.PDF', 'mimetype':'application/pdf', 'dokmal':'S',
-                'dato':'08.10.2013'}
-            ]}
-        ];
+        call = $http({'method': 'GET', 'url': 'data/dummy-searchresults.json'});
 
-      return json;
+      return call;
     }
 
     apiservice.getSak = function(sakid){

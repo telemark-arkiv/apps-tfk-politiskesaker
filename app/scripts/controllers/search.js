@@ -6,8 +6,15 @@ angular.module('appsTfkPolitiskesakerApp')
       query = $routeParams.query;
 
     $scope.saker = [];
+    $scope.imSearching = true;
 
-    $scope.saker = Api.search(query);
-
-
+    Api.search(query).
+     success(function(data){
+        $scope.saker = data;
+        $scope.imSearching = false;
+     }).
+     error(function(data, status, header, config){
+        $scope.imSearching = false;
+        console.log(status);
+     });
   });
