@@ -64,3 +64,7 @@ body {
 .credits a:hover {
     color: black;
 }
+
+.margin-left-10 {
+    margin-left: 10px;
+}

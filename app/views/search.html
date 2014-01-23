@@ -1,1 +1,5 @@
-<p>This is the search view.</p>
+<h1>Søkeresultat: {{ saker.length }} treff</h1>
+
+<div data-ng-repeat="s in saker" class="well">
+    <h2>{{ s.tittel }}</h2>
+</div>

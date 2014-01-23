@@ -5,6 +5,13 @@ angular.module('appsTfkPolitiskesakerApp')
 
     $scope.thispath = '';
 
+    $scope.submit = function () {
+      var query = $scope.querystring;
+
+      $location.path('/search/' + query);
+
+    };
+
     $scope.$watch(function () {
         return $location.path();
       }, function () {

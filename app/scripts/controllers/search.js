@@ -1,10 +1,13 @@
 'use strict';
 
 angular.module('appsTfkPolitiskesakerApp')
-  .controller('SearchCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('SearchCtrl', function ($scope, $routeParams, Api) {
+    var
+      query = $routeParams.query;
+
+    $scope.saker = [];
+
+    $scope.saker = Api.search(query);
+
+
   });

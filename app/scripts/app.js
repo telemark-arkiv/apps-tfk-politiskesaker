@@ -24,7 +24,7 @@ angular.module('appsTfkPolitiskesakerApp', [
         templateUrl: 'views/personvern.html',
         controller: 'PersonvernCtrl'
       })
-      .when('/search', {
+      .when('/search/:query', {
         templateUrl: 'views/search.html',
         controller: 'SearchCtrl'
       })
