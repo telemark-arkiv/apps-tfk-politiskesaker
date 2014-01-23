@@ -1,11 +1,15 @@
 'use strict';
 
 angular.module('appsTfkPolitiskesakerApp')
-  .controller('KontaktCtrl', function ($scope, $http) {
+  .controller('KontaktCtrl', function ($scope, Api) {
     $scope.results = [];
 
-    $http({'method': 'GET', 'url': 'data/kontakt.json'}).
+    Api.getKontaktPersoner().
       success(function (data) {
         $scope.results = data;
+      }).
+      error(function(data, status, header, config){
+        console.log(status);
       });
+
   });

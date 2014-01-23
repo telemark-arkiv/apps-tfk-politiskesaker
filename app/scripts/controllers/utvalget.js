@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('appsTfkPolitiskesakerApp')
-  .controller('UtvalgetCtrl', function ($scope, $routeParams, $http, Api) {
+  .controller('UtvalgetCtrl', function ($scope, $routeParams, Api) {
 
     var
       utvid = $routeParams.utvid;
@@ -22,12 +22,15 @@ angular.module('appsTfkPolitiskesakerApp')
         $scope.loading = false;
       });
 
-    $http({'method': 'GET', 'url': 'data/utvalgskontakt.json'}).
+    Api.getKontaktPersonForUtvalg().
       success(function (data) {
         var
           personid = data.utvalg[utvid].kontaktperson;
 
         $scope.kontaktperson = data.kontaktperson[personid];
+      }).
+      error(function(data, status, header, config){
+        console.log(status);
       });
 
   });

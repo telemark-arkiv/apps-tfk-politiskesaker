@@ -83,5 +83,19 @@ angular.module('appsTfkPolitiskesakerApp')
       return json;
     }
 
+    apiservice.getKontaktPersoner = function() {
+      var
+        call = $http({'method': 'GET', 'url': 'data/kontakt.json'});
+
+      return call;
+    }
+
+    apiservice.getKontaktPersonForUtvalg = function() {
+      var
+        call = $http({'method': 'GET', 'url': 'data/utvalgskontakt.json'});
+
+      return call;
+    }
+
     return apiservice;
   });
