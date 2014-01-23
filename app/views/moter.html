@@ -1,15 +1,9 @@
-<h1>{{ mote[0].motetittel }}</h1>
+<h1>{{ mote[0].moteid }}</h1>
 
-<p>Dato: {{ mote.motedato}} Sted: {{ mote.motested }}</p>
+<p>Dato: {{ mote[0].moteid}} Sted: {{ mote[0].moteid }}</p>
 
-<div data-ng-repeat="d in mote.dokumenter">
-{{ d.tittel }}
-</div>
 <h2>Saker</h2>
-<div data-ng-repeat="s in mote.saker">
-    {{ s.saksaar }} - {{ s.saksnr }}<br/>
-    {{ s.tittel }}
-    <div data-ng-repeat="d in s.dokumenter">
-        {{ d.tittel }}
-    </div>
+<div data-ng-repeat="s in mote">
+    <h3>{{ s.tittel }}</h3>
+    <p>År: {{ s.saksaar }} Saksnr: {{ s.saksnr }}<br/>
 </div>
