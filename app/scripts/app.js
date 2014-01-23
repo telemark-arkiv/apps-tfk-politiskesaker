@@ -36,6 +36,10 @@ angular.module('appsTfkPolitiskesakerApp', [
         templateUrl: 'views/saker.html',
         controller: 'SakerCtrl'
       })
+      .when('/kontakt', {
+        templateUrl: 'views/kontakt.html',
+        controller: 'KontaktCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
