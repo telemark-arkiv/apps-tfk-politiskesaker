@@ -7,8 +7,55 @@
     "721" : {
       "name" : "Fylkesutvalget",
       "kontaktperson" : "1"
+    },
+    "733" : {
+      "name" : "Hovedutvalg for kompetanse",
+      "kontaktperson" : "2"
+    },
+    "724" : {
+      "name" : "Telemark fylkeskommunale klagenemnd",
+      "kontaktperson" : "2"
+    },
+    "713" : {
+      "name" : "Yrkesopplæringsnemda",
+      "kontaktperson" : "2"
+    },
+    "2520" : {
+      "name" : "Fylkeskommunalt råd for personer med nedsatt funksjonsevne",
+      "kontaktperson" : "3"
+    },
+    "2620" : {
+      "name" : "Hovedutvalg for samferdsel",
+      "kontaktperson" : "3"
+    },
+    "2618" : {
+      "name" : "Hovedutvalg for kultur",
+      "kontaktperson" : "3"
+    },
+    "22" : {
+      "name" : "Klagenemnd for skolesaker",
+      "kontaktperson" : "3"
+    },
+    "722" : {
+      "name" : "Telemark fylkeskommunale eldreråd",
+      "kontaktperson" : "3"
+    },
+    "714" : {
+      "name" : "Administrasjonsutvalget",
+      "kontaktperson" : "4"
+    },
+    "729" : {
+      "name" : "Forhandlingsutvalget",
+      "kontaktperson" : "4"
+    },
+    "2619" : {
+      "name" : "Hovedutvalg for næringsutvikling",
+      "kontaktperson" : "4"
+    },
+    "9" : {
+      "name" : "Kontrollutvalget",
+      "kontaktperson" : "5"
     }
-
   },
   "kontaktperson" : {
     "1" : {
