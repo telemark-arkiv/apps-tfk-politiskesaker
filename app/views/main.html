@@ -5,9 +5,9 @@
 </div>
 
 <div data-ng-repeat="u in utvalgsListe | orderBy:'utvnavn'" class="well">
-    <a href="#/utvalg/{{ u.utvid }}"><h2>{{ u.utvnavn }}</h2></a>
+    <span class="lead">{{ u.utvnavn }}</span>
     <p>
-        <span class="glyphicon glyphicon-calendar"></span><strong> Seneste møte: </strong>  <a href="#/moter/10917">22.04.2013</a>
-        <span class="glyphicon glyphicon-calendar"></span><strong> Alle møter: </strong> <a href="#/utvalg/{{ u.utvid }}">Vis oversikt</a>
+        <strong> Seneste møte: </strong> <span class="glyphicon glyphicon-calendar"></span> <a href="#/moter/10917">22.04.2013</a>
+        <strong> Alle møter: </strong> <span class="glyphicon glyphicon-list"></span> <a href="#/utvalg/{{ u.utvid }}">Vis oversikt</a>
     </p>
 </div>

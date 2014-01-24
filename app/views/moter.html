@@ -2,7 +2,7 @@
 
 <p>Dato: {{ mote[0].moteid}} Sted: {{ mote[0].moteid }}</p>
 
-<div data-ng-repeat="s in mote" class="well">
+<div data-ng-repeat="s in mote | orderBy:'tittel'" class="well">
     <p class="lead">{{ s.tittel }}</p>
     <div data-ng-repeat="d in s.dokumenter">
         <span class="glyphicon glyphicon-file"></span> <a href="{{ d.filnavn }}" target="_blank" title="Last ned dokumentet: {{ d.tittel }}">{{ d.tittel }}</a>

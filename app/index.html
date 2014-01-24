@@ -30,12 +30,12 @@
                 <label class="sr-only" for="SearchText">Søkekriterier</label>
                 <input type="text" class="form-control" id="SearchText" placeholder="Søkekriterier" data-ng-model="querystring">
             </div>
-            <button type="submit" class="btn btn-default">Søk</button>
+            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Søk</button>
         </form>
         <ul class="nav nav-pills pull-right">
-            <li data-ng-class="{'active': thispath == '/'}"><a ng-href="#">Hjem</a></li>
-            <li data-ng-class="{'active': thispath == '/kontakt'}"><a data-ng-href="#/kontakt">Kontakt</a></li>
-            <li data-ng-class="{'active': thispath == '/personvern'}"><a data-ng-href="#/personvern">Personvern</a></li>
+            <li data-ng-class="{'active': thispath == '/'}"><a ng-href="#"><span class="glyphicon glyphicon-home"></span> Hjem</a></li>
+            <li data-ng-class="{'active': thispath == '/kontakt'}"><a data-ng-href="#/kontakt"><span class="glyphicon glyphicon-user"></span> Kontakt</a></li>
+            <li data-ng-class="{'active': thispath == '/personvern'}"><a data-ng-href="#/personvern"><span class="glyphicon glyphicon-tower"></span> Personvern</a></li>
         </ul>
         <h3 class="text-muted">Telemark fylkeskommune - politiske saker</h3>
     </div>
