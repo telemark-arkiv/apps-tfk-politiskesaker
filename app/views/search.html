@@ -1,8 +1,15 @@
 <h1>Søkeresultat: {{ saker.length }} treff</h1>
 
 <div data-ng-repeat="s in saker | orderBy:saksaar" class="well">
-    <p><strong>Saksår: </strong> {{ s.saksaar }} <strong>Saksnummer: </strong> {{ s.saksnr }}</p>
-    <h2>{{ s.tittel }}</h2>
+    <p>
+        <strong>Utvalg: </strong> <a href="#/utvalg/{{ s.utvid }}">{{ s.utvnavn }}</a>
+        <strong>Møtedato: </strong> <a href="#/moter/{{ s.moteid }}">{{ s.motedato }}</a>
+        <strong>Saksår: </strong> {{ s.saksaar }}
+        <strong>Saksnummer: </strong> {{ s.saksnr }}
+    </p>
+    <p>
+        <strong class="lead">{{ s.tittel }}</strong>
+    </p>
     <div data-ng-repeat="d in s.dokumenter">
         <span class="glyphicon glyphicon-file"></span> <a href="{{ d.filnavn }}" target="_blank" title="Last ned dokumentet: {{ d.tittel }}">{{ d.tittel }}</a>
     </div>

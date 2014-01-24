@@ -1,5 +1,9 @@
 [
   {
+    "utvnavn" : "Hovedutvalg for kompetanse",
+    "utvid" : "733",
+    "moteid": "10881",
+    "motedato": "07.11.2013",
     "saksaar" : 2013,
     "saksnr" : 31,
     "sakstype" : "PS",
@@ -19,11 +23,15 @@
     ]
   },
   {
+    "utvnavn" : "Hovedutvalg for kompetanse",
+    "utvid" : "733",
+    "moteid": "10881",
+    "motedato": "07.11.2013",
     "saksaar" : 2013,
     "saksnr" : 32,
     "sakstype" : "PS",
     "saksstatus" : "BE",
-    "tittel" : "32/13 Rupparill Rallebuff",
+    "tittel" : "32/13 Nettundervisning i Telemark",
     "dokumenter": [
       {
         "dokid" : 13041277,

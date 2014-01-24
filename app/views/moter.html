@@ -2,8 +2,9 @@
 
 <p>Dato: {{ mote[0].moteid}} Sted: {{ mote[0].moteid }}</p>
 
-<h2>Saker</h2>
-<div data-ng-repeat="s in mote">
-    <h3>{{ s.tittel }}</h3>
-    <p>År: {{ s.saksaar }} Saksnr: {{ s.saksnr }}<br/>
+<div data-ng-repeat="s in mote" class="well">
+    <p class="lead">{{ s.tittel }}</p>
+    <div data-ng-repeat="d in s.dokumenter">
+        <span class="glyphicon glyphicon-file"></span> <a href="{{ d.filnavn }}" target="_blank" title="Last ned dokumentet: {{ d.tittel }}">{{ d.tittel }}</a>
+    </div>
 </div>
