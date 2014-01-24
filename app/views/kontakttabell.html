@@ -11,26 +11,19 @@
             <table class="no-style">
                 <tr data-ng-show="p.phone">
                     <td class="no-style">
-                        <span class="glyphicon glyphicon-phone-alt"></span>
-                    </td>
-                    <td class="no-style">
-                        <a href="tel:+47{{ p.phone }}" title="Ring telefonnr {{ p.phone }}">{{ p.phone }}</a>
+                        <span class="glyphicon glyphicon-phone-alt"></span> <a href="tel:+47{{ p.phone }}" title="Ring telefonnr {{ p.phone }}">{{ p.phone }}</a>
                     </td>
                 </tr>
                 <tr data-ng-show="p.mobile">
                     <td class="no-style">
-                        <span class="glyphicon glyphicon-phone"></span>
-                    </td>
-                    <td class="no-style">
-                        <a href="tel:+47{{ p.mobile }}" title="Ring mobilnr {{ p.mobile }}">{{ p.mobile }}</a>
+                        <span class="glyphicon glyphicon-phone"></span> <a href="tel:+47{{ p.mobile }}" title="Ring mobilnr {{ p.mobile }}">{{ p.mobile }}</a>
                     </td>
                 </tr>
             </table>
         </td>
         <td>
-            <span data-ng-show="p.mail">    
-                <span class="glyphicon glyphicon-envelope"></span>
-                <a href="mailto:{{ p.mail }}" title="Send e-post til {{ p.mail }}">{{ p.mail }}</a>
+            <span data-ng-show="p.mail">
+                <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:{{ p.mail }}" title="Send e-post til {{ p.mail }}">{{ p.mail }}</a>
             </span>
         </td>
         <td>

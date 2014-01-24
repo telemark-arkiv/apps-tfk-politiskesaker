@@ -22,7 +22,7 @@ angular.module('appsTfkPolitiskesakerApp')
         $scope.loading = false;
       });
 
-    Api.getKontaktPersonForUtvalg().
+    Api.getKontaktPersonForUtvalg(utvid).
       success(function (data) {
         var
           personid = data.utvalg[utvid].kontaktperson;

@@ -47,6 +47,7 @@ angular.module('appsTfkPolitiskesakerApp')
 
     apiservice.search = function(query){
       var
+        url = '',
         call = $http({'method': 'GET', 'url': 'data/dummy-searchresults.json'});
 
       return call;

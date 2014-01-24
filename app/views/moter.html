@@ -1,10 +1,22 @@
-<h1>{{ mote[0].moteid }}</h1>
+<h1>{{ mote.motetittel }}</h1>
 
-<p>Dato: {{ mote[0].moteid}} Sted: {{ mote[0].moteid }}</p>
+<div class="col-lg-8">
+    <p>Dato: {{ mote.motedato }} Sted: {{ mote.motested }}</p>
 
-<div data-ng-repeat="s in mote | orderBy:'tittel'" class="well">
-    <p class="lead">{{ s.tittel }}</p>
-    <div data-ng-repeat="d in s.dokumenter">
+    <div data-ng-repeat="d in mote.dokumenter">
         <span class="glyphicon glyphicon-file"></span> <a href="{{ d.filnavn }}" target="_blank" title="Last ned dokumentet: {{ d.tittel }}">{{ d.tittel }}</a>
     </div>
+
+    <div data-ng-repeat="s in mote.saker | orderBy:'tittel'" class="well">
+        <p class="lead">{{ s.tittel }}</p>
+        <div data-ng-repeat="d in s.dokumenter">
+            <span class="glyphicon glyphicon-file"></span> <a href="{{ d.filnavn }}" target="_blank" title="Last ned dokumentet: {{ d.tittel }}">{{ d.tittel }}</a>
+        </div>
+    </div>
 </div>
+
+<div class="col-lg-4">
+    <div data-kontaktpersonbox></div>
+</div>
+
+<div class="clearfix"></div>
