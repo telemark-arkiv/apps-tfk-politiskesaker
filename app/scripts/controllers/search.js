@@ -8,7 +8,7 @@ angular.module('appsTfkPolitiskesakerApp')
     $scope.saker = [];
     $scope.imSearching = true;
 
-    Api.search(query).
+    Api.searchSaker(query).
      success(function(data){
         $scope.saker = data;
         $scope.imSearching = false;
