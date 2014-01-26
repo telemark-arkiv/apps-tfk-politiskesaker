@@ -45,10 +45,10 @@ angular.module('appsTfkPolitiskesakerApp')
       return call;
     };
 
-    apiservice.search = function(query){
+    apiservice.searchSaker = function(query){
       var
-        url = '',
-        call = $http({'method': 'GET', 'url': 'data/dummy-searchresults.json'});
+        url = apiURLstart + '?resource=political&search=sak&string=' + query + apiURLend,
+        call = $http({'method': 'JSONP', 'url': url});
 
       return call;
     }
