@@ -1,6 +1,6 @@
 <h1>Søkeresultat: {{ saker.length }} treff</h1>
 
-<div data-ng-repeat="s in saker | orderBy:saksaar" class="well">
+<div data-ng-repeat="s in saker | orderBy:'saksaar':true" class="well">
     <p>
         <strong>Utvalg: </strong> <a href="#/utvalg/{{ s.utvid }}">{{ s.utvnavn }}</a>
         <strong>Møtedato: </strong> <a href="#/moter/{{ s.moteid }}">{{ s.motedato }}</a>
