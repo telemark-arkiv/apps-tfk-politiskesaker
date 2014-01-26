@@ -10,7 +10,7 @@ angular.module('appsTfkPolitiskesakerApp')
 
     Api.searchSaker(query).
      success(function(data){
-        $scope.saker = data;
+        $scope.saker = data.results;
         $scope.imSearching = false;
      }).
      error(function(data, status, header, config){
