@@ -2,7 +2,6 @@
 
 angular.module('appsTfkPolitiskesakerApp')
   .service('Api', function Api($http) {
-    // AngularJS will instantiate a singleton by calling "new" on this function
 
     var
       apiURLstart = 'http://ws.t-fk.no/',

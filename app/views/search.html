@@ -11,6 +11,6 @@
         <strong class="lead">{{ s.tittel }}</strong>
     </p>
     <div data-ng-repeat="d in s.dokumenter">
-        <span class="glyphicon glyphicon-file"></span> <a href="{{ d.filnavn }}" target="_blank" title="Last ned dokumentet: {{ d.tittel }}">{{ d.tittel }}</a>
+        <span class="glyphicon glyphicon-file"></span> <a href="{{ downloadBaseUrl }}/{{ s.utvid }}/{{ s.moteid }}/{{ d.filnavn }}" target="_blank" title="Last ned dokumentet: {{ d.tittel }}">{{ d.tittel }}</a>
     </div>
 </div>

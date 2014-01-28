@@ -4,14 +4,14 @@
     <div class="padding-bottom-15">
         <p><strong>Dato: </strong> <span class="glyphicon glyphicon-calendar"></span> {{ mote.motedato }} <strong>Sted: </strong> {{ mote.motested }}</p>
         <div data-ng-repeat="d in mote.dokumenter">
-            <span class="glyphicon glyphicon-file"></span> <a href="{{ d.filnavn }}" target="_blank" title="Last ned dokumentet: {{ d.tittel }}">{{ d.tittel }}</a>
+            <span class="glyphicon glyphicon-file"></span> <a href="{{ downloadBaseUrl }}/{{ mote.utvid }}/{{ mote.moteid }}/{{ d.filnavn }}" target="_blank" title="Last ned dokumentet: {{ d.tittel }}">{{ d.tittel }}</a>
         </div>
     </div>
 
     <div data-ng-repeat="s in mote.saker | orderBy:'tittel'" class="well">
         <p class="lead">{{ s.tittel }}</p>
         <div data-ng-repeat="d in s.dokumenter">
-            <span class="glyphicon glyphicon-file"></span> <a href="{{ d.filnavn }}" target="_blank" title="Last ned dokumentet: {{ d.tittel }}">{{ d.tittel }}</a>
+            <span class="glyphicon glyphicon-file"></span> <a href="{{ downloadBaseUrl }}/{{ mote.utvid }}/{{ mote.moteid }}/{{ d.filnavn }}" target="_blank" title="Last ned dokumentet: {{ d.tittel }}">{{ d.tittel }}</a>
         </div>
     </div>
 </div>

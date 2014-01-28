@@ -6,6 +6,7 @@ angular.module('appsTfkPolitiskesakerApp')
     var
       utvid = $routeParams.utvid;
 
+    $scope.downloadBaseUrl = 'http://ws.t-fk.no/download';
     $scope.utvalgsmoter = [];
     $scope.kontaktperson = '';
 

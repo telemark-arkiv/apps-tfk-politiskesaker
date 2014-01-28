@@ -5,6 +5,7 @@ angular.module('appsTfkPolitiskesakerApp')
     var
       query = $routeParams.query;
 
+    $scope.downloadBaseUrl = 'http://ws.t-fk.no/download';
     $scope.saker = [];
     $scope.imSearching = true;
 
