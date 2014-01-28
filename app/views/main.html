@@ -7,7 +7,7 @@
 <div data-ng-repeat="u in utvalgsListe | orderBy:'utvnavn'" class="well">
     <span class="lead">{{ u.utvnavn }}</span>
     <p>
-        <strong> Seneste møte: </strong> <span class="glyphicon glyphicon-calendar"></span> <a href="#/moter/10917">22.04.2013</a>
+        <strong> Seneste møte: </strong> <span class="glyphicon glyphicon-calendar"></span> <a href="#/moter/{{ u.utvsistmoteid }}">{{ u.utvsistmote }}</a>
         <strong> Alle møter: </strong> <span class="glyphicon glyphicon-list"></span> <a href="#/utvalg/{{ u.utvid }}">Vis oversikt</a>
     </p>
 </div>
