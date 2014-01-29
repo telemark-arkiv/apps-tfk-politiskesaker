@@ -10,11 +10,17 @@ describe('Directive: kontaktpersonbox', function () {
 
   beforeEach(inject(function ($rootScope) {
     scope = $rootScope.$new();
+    scope.kontaktperson = {
+      name: 'Ole',
+      mail: 'ole@ole.no',
+      phone: '1234',
+      mobile: '5678'
+    };
   }));
 
   it('should make hidden element visible', inject(function ($compile) {
     element = angular.element('<kontaktpersonbox></kontaktpersonbox>');
     element = $compile(element)(scope);
-    expect(element.text()).toBe('this is the kontaktpersonbox directive');
+    expect(element.length).toBe(1);
   }));
 });
