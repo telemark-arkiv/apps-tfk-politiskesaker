@@ -8,8 +8,20 @@
       "name" : "Fylkesutvalget",
       "kontaktperson" : "1"
     },
+    "739" : {
+      "name" : "Fylkesvalstyret",
+      "kontaktperson" : "1"
+    },
+    "740" : {
+      "name" : "Fylkestingets valnemnd",
+      "kontaktperson" : "1"
+    },
     "733" : {
       "name" : "Hovedutvalg for kompetanse",
+      "kontaktperson" : "2"
+    },
+    "737" : {
+      "name" : "Arbeidsutvalet for hovudutvalet for kompetanse",
       "kontaktperson" : "2"
     },
     "724" : {
@@ -50,6 +62,10 @@
     },
     "2619" : {
       "name" : "Hovedutvalg for næringsutvikling",
+      "kontaktperson" : "4"
+    },
+    "731" : {
+      "name" : "Telemark interkommunale næringsfond",
       "kontaktperson" : "4"
     },
     "9" : {

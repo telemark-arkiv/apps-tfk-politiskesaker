@@ -6,7 +6,9 @@
     "mobile":"959 30 002",
     "utvalg":[
       {"name":"Fylkestinget","id": "720"},
-      {"name":"Fylkesutvalget", "id": "721"}
+      {"name":"Fylkestingets valnemnd","id": "740"},
+      {"name":"Fylkesutvalget", "id": "721"},
+      {"name":"Fylkesvalstyret","id": "739"}
     ]
   },
   {
@@ -15,6 +17,7 @@
     "phone": "35 91 73 06",
     "mobile":"402 02 454",
     "utvalg":[
+      {"name":"Arbeidsutvalet for hovudutvalet for kompetanse","id": "737"},
       {"name":"Hovedutvalg for kompetanse","id": "733"},
       {"name":"Telemark fylkeskommunale klagenemnd","id": "724"},
       {"name":"Yrkesopplæringsnemda", "id": "713"}
@@ -41,7 +44,8 @@
     "utvalg":[
       {"name":"Administrasjonsutvalget","id": "714"},
       {"name":"Forhandlingsutvalget", "id": "729"},
-      {"name":"Hovedutvalg for næringsutvikling", "id": "2619"}
+      {"name":"Hovedutvalg for næringsutvikling", "id": "2619"},
+      {"name":"Telemark interkommunale næringsfond","id": "731"}
     ]
   },
   {
