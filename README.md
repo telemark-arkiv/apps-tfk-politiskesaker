@@ -1,11 +1,59 @@
-#apps-tfk-politiskesaker#
+#Politiske saker#
+##[![Build Status](https://travis-ci.org/telemark/apps-tfk-webstatistikk.png?branch=master)](https://travis-ci.org/telemark/apps-tfk-politiskesaker) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)##
 
-Løsning for å vise politiske saker og møteprotokoller for utvalgene. Løsningen ligger på [apps.t-fk.no/politiske-saker](http://apps.t-fk.no/politiske-saker)
+Webløsning for å vise politiske saker og møteprotokoller for utvalgene.
 
-##Slik bruker du løsningen##
+Sidene kan sees på [apps.t-fk.no/politisk](http://apps.t-fk.no/politisk)
+
+##Slik setter du opp din egen kopi##
+
+Nettsidene bruker [AngularJS](http://angularjs.org/), [Bootstrap](http://getbootstrap.com/) og er laget vha [Yeoman](http://yeoman.io/).
+
+For å kunne sette opp egen kopi må du derfor ha installert [Node.js](http://nodejs.org/), [Yeoman](http://yeoman.io/) og [generator-angular](https://github.com/yeoman/generator-angular).
+
+Når dette er på plass kan du klone repoet fra GitHub
+
+```
+$ git clone git@github.com:telemark/apps-tfk-politiskesaker.git
+```
+
+Gå inn i mappen som er lastet ned og hent nødvendige moduler vha npm og bower
+
+```
+$ npm install && bower install
+```
+
+For å starte lokal server bruker du grunt
+
+```
+$ grunt serve
+```
+
+Grunt brukes også til å kjøre testene
+
+```
+$ grunt test_dev
+```
+
+For å bygge løsningen for distribusjon er kommandoen enkelt og greit
+
+```
+$ grunt
+```
+
+Alle nødvendige filer pakkes, minimeres og kopieres til en mappe *dist* som du deretter kan servere fra fritt valgt webserver.
 
 
 ##API##
+
+Løsningen benytter seg av Telemark fylkeskommunes åpne API.
+
+Les mer om APIene og webservicene på [http://ws.t-fk.no/help/index.html](http://ws.t-fk.no/help/index.html)
+
+
+##Todo##
+
+Oppdatere beskrivelsene og eksemplene for APIet
 
 political
 
