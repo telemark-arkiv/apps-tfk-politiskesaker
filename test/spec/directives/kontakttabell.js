@@ -15,6 +15,6 @@ describe('Directive: kontakttabell', function () {
   it('should make hidden element visible', inject(function ($compile) {
     element = angular.element('<kontakttabell></kontakttabell>');
     element = $compile(element)(scope);
-    expect(element.text()).toBe('this is the kontakttabell directive');
+    expect(element.length).toBe(1);
   }));
 });
