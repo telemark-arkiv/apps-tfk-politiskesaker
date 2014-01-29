@@ -9,7 +9,7 @@ angular.module('appsTfkPolitiskesakerApp')
         $scope.results = data;
       }).
       error(function(data, status, header, config){
-        console.log(status);
-      });
+        //console.log(status);
+    });
 
   });
