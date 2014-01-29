@@ -16,7 +16,16 @@ describe('Controller: UtvalgetCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should attach downloadBaseUrl to the scope', function () {
+    expect(scope.downloadBaseUrl).toBe('http://ws.t-fk.no/download');
   });
+
+  it('should attach an empty list utvalgsmoter to the scope', function () {
+    expect(scope.utvalgsmoter.length).toBe(0);
+  });
+
+  it('should attach an empty kontaktperson to the scope', function () {
+    expect(scope.kontaktperson.length).toBe(0);
+  });
+
 });
