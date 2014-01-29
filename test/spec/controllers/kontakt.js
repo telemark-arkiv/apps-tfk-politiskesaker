@@ -16,7 +16,7 @@ describe('Controller: KontaktCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should attach an empty results-list to the scope', function () {
+    expect(scope.results.length).toBe(0);
   });
 });
