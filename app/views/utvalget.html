@@ -1,4 +1,4 @@
-<h1>{{ utvalgsmoter[0].utvnavn}}</h1>
+<h1>{{ utvalg.utvnavn }}</h1>
 
 <div class="col-lg-8">
     <table class="table">
@@ -10,7 +10,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr data-ng-repeat="m in utvalgsmoter">
+        <tr data-ng-repeat="m in utvalg.moter | orderBy:'moteid':true">
             <td>
                 <span class="glyphicon glyphicon-calendar"></span> <a href="#/moter/{{ m.moteid }}">{{ m.motedato }}</a>
             </td>

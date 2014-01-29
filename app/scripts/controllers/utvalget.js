@@ -14,7 +14,7 @@ angular.module('appsTfkPolitiskesakerApp')
       success(function(data, status, headers, config) {
         // this callback will be called asynchronously
         // when the response is available
-        $scope.utvalgsmoter = data.results;
+        $scope.utvalg = data.results[0];
         $scope.loading = false;
       }).
       error(function(data, status, headers, config) {
