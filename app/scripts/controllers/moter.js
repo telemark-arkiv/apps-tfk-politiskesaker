@@ -7,6 +7,7 @@ angular.module('appsTfkPolitiskesakerApp')
       moteid = $routeParams.moteid;
 
     $scope.downloadBaseUrl = 'http://ws.t-fk.no/download';
+    $scope.mote = '';
 
     function getKontaktPerson(utvid) {
       Api.getKontaktPersonForUtvalg(utvid).
@@ -20,9 +21,6 @@ angular.module('appsTfkPolitiskesakerApp')
           console.log(status);
         });
     }
-
-    $scope.mote = '';
-
 
     Api.getMotet(moteid).
       success(function(data, status, headers, config) {

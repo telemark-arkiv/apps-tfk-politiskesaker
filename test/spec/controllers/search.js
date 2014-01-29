@@ -16,7 +16,16 @@ describe('Controller: SearchCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should attach downloadBaseUrl to the scope', function () {
+    expect(scope.downloadBaseUrl).toBe('http://ws.t-fk.no/download');
   });
+
+  it('should attach an empty list saker to the scope', function () {
+    expect(scope.saker.length).toBe(0);
+  });
+
+  it('should attach imSearching to the scope', function () {
+    expect(scope.imSearching).toBe(true);
+  });
+
 });
