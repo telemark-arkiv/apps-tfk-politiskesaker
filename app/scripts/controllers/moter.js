@@ -15,7 +15,7 @@ angular.module('appsTfkPolitiskesakerApp')
       } else {
         return parseInt(sak.saksnr);
       }
-    }
+    };
 
     function getKontaktPerson(utvid) {
       Api.getKontaktPersonForUtvalg(utvid).
