@@ -16,7 +16,7 @@ angular.module('appsTfkPolitiskesakerApp')
       } else {
         return parseInt(mote.moteid);
       }
-    }
+    };
 
     Api.getUtvalget(utvid).
       success(function(data, status, headers, config) {

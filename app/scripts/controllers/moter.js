@@ -9,6 +9,14 @@ angular.module('appsTfkPolitiskesakerApp')
     $scope.downloadBaseUrl = 'http://ws.t-fk.no/download';
     $scope.mote = '';
 
+    $scope.sortBySaksnr = function(sak) {
+      if(isNaN(sak.saksnr)) {
+        return sak.saksnr;
+      } else {
+        return parseInt(sak.saksnr);
+      }
+    }
+
     function getKontaktPerson(utvid) {
       Api.getKontaktPersonForUtvalg(utvid).
         success(function (data) {
