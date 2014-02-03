@@ -2,7 +2,7 @@
 
 <div class="col-lg-8">
     <div class="padding-bottom-15">
-        <p><strong>Dato: </strong> <span class="glyphicon glyphicon-calendar"></span> {{ mote.motedato }} <strong>Sted: </strong> {{ mote.motested }}</p>
+        <p><strong>Dato: </strong> <span class="glyphicon glyphicon-calendar"></span> {{ mote.motedato }} <span data-ng-show="mote.motested != 'null'"><strong>Sted: </strong> {{ mote.motested }}</span></p>
         <div data-ng-repeat="d in mote.dokumenter">
             <span class="glyphicon glyphicon-file"></span> <a href="{{ downloadBaseUrl }}/{{ mote.utvid }}/{{ mote.moteid }}/{{ d.filnavn }}" target="_blank" title="Last ned dokumentet: {{ d.tittel }}">{{ d.tittel }}</a>
         </div>
