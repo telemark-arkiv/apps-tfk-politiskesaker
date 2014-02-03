@@ -10,6 +10,14 @@ angular.module('appsTfkPolitiskesakerApp')
     $scope.utvalgsmoter = [];
     $scope.kontaktperson = '';
 
+    $scope.sortByMoteid = function(mote) {
+      if(isNaN(mote.moteid)) {
+        return mote.moteid;
+      } else {
+        return parseInt(mote.moteid);
+      }
+    }
+
     Api.getUtvalget(utvid).
       success(function(data, status, headers, config) {
         // this callback will be called asynchronously

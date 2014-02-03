@@ -8,8 +8,8 @@
         </div>
     </div>
 
-    <div data-ng-repeat="s in mote.saker | orderBy:'tittel'" class="well">
-        <p class="lead">{{ s.tittel }}</p>
+    <div data-ng-repeat="s in mote.saker | orderBy:'saksnr'" class="well">
+        <p class="lead">{{ s.tittel }}: {{s.saksnr}}</p>
         <div data-ng-repeat="d in s.dokumenter">
             <span class="glyphicon glyphicon-file"></span> <a href="{{ downloadBaseUrl }}/{{ mote.utvid }}/{{ mote.moteid }}/{{ d.filnavn }}" target="_blank" title="Last ned dokumentet: {{ d.tittel }}">{{ d.tittel }}</a>
         </div>
