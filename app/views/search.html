@@ -1,4 +1,5 @@
-<h1>Søkeresultat: {{ saker.length }} treff</h1>
+<div data-ng-show="imSearching == true" class="lead"><span class="glyphicon glyphicon-refresh"></span> ...Søker</div>
+<h1 data-ng-show="imSearching == false">Søkeresultat: {{ saker.length }} treff</h1>
 
 <div data-ng-repeat="s in saker | orderBy:'saksaar':true" class="well">
     <p>
@@ -11,6 +12,6 @@
         <strong class="lead">{{ s.tittel }}</strong>
     </p>
     <div data-ng-repeat="d in s.dokumenter">
-        <span class="glyphicon glyphicon-file"></span> <a href="{{ downloadBaseUrl }}/{{ s.utvid }}/{{ s.moteid }}/{{ d.filnavn }}" target="_blank" title="Last ned dokumentet: {{ d.tittel }}"><span data-ng-show="d.sakstittel != ''">{{ d.sakstittel }} </span>{{ d.tittel }}</a>
+        <span class="glyphicon glyphicon-file"></span> <a href="{{ downloadBaseUrl }}/{{ s.utvid }}/{{ s.moteid }}/{{ d.filnavn }}" target="_blank" title="Last ned dokumentet: {{ d.tittel }}"><span data-ng-show="d.sakstittel != ''">{{ d.sakstittel }}&nbsp;</span>{{ d.tittel }}</a>
     </div>
 </div>
