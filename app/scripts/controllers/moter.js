@@ -17,6 +17,14 @@ angular.module('appsTfkPolitiskesakerApp')
       }
     };
 
+    $scope.sortByDokType = function(dok) {
+      if(isNaN(dok.type)) {
+        return dok.type;
+      } else {
+        return parseInt(dok.type);
+      }
+    };
+
     function getKontaktPerson(utvid) {
       Api.getKontaktPersonForUtvalg(utvid).
         success(function (data) {

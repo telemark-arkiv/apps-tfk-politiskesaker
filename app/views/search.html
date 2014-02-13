@@ -11,7 +11,7 @@
     <p>
         <strong class="lead">{{ s.tittel }}</strong>
     </p>
-    <div data-ng-repeat="d in s.dokumenter">
+    <div data-ng-repeat="d in s.dokumenter | orderBy:sortByDokType">
         <span class="glyphicon glyphicon-file"></span> <a href="{{ downloadBaseUrl }}/{{ s.utvid }}/{{ s.moteid }}/{{ d.filnavn }}" target="_blank" title="Last ned dokumentet: {{ d.tittel }}"><span data-ng-show="d.sakstittel != ''">{{ d.sakstittel }}&nbsp;</span>{{ d.tittel }}</a>
     </div>
 </div>

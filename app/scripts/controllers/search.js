@@ -9,6 +9,14 @@ angular.module('appsTfkPolitiskesakerApp')
     $scope.saker = [];
     $scope.imSearching = true;
 
+    $scope.sortByDokType = function(dok) {
+      if(isNaN(dok.type)) {
+        return dok.type;
+      } else {
+        return parseInt(dok.type);
+      }
+    };
+
     Api.searchSaker(query).
      success(function(data){
         $scope.saker = data.results;
