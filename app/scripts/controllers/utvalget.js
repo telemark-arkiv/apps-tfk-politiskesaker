@@ -19,12 +19,12 @@ angular.module('appsTfkPolitiskesakerApp')
     };
 
     $scope.sortByMotedato = function(mote) {
-        var
-            motedato_list = mote.motedato.split('.'),
-            motedato_string = motedato_list[2] + '/' + motedato_list[1] + '/' + motedato_list[0],
-            motedato = new Date(motedato_string);
+      var
+        motedatoList = mote.motedato.split('.'),
+        motedatoString = motedatoList[2] + '/' + motedatoList[1] + '/' + motedatoList[0],
+        motedato = new Date(motedatoString);
 
-        return motedato;
+      return motedato;
     };
 
     Api.getUtvalget(utvid).
