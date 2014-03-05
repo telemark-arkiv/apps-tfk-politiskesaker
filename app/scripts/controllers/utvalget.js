@@ -49,6 +49,6 @@ angular.module('appsTfkPolitiskesakerApp')
       }).
       error(function(data, status, header, config){
         //console.log(status);
-      });
+    });
 
   });
