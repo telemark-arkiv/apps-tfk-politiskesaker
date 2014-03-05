@@ -34,7 +34,7 @@ angular.module('appsTfkPolitiskesakerApp')
           $scope.kontaktperson = data.kontaktperson[personid];
         }).
         error(function(data, status, header, config){
-          console.log(status);
+          //console.log(status);
         });
     }
 

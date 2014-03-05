@@ -24,6 +24,6 @@ angular.module('appsTfkPolitiskesakerApp')
       }).
      error(function(data, status, header, config){
         $scope.imSearching = false;
-        console.log(status);
+        //console.log(status);
       });
   });
