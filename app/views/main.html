@@ -1,13 +1,22 @@
-<div class="lead">
-    Her finner du saklister og dokumenter til de ulike utvalgsmøtene.<br/>
-    Ved å velge utvalg ser du oversikt over møtene.<br/>
-    Bruker du søkefeltet vil du søke blant saker.
+
+<div class="col-lg-8">
+    <div class="lead">
+        Her finner du saklister og dokumenter til de ulike utvalgsmøtene.<br/>
+        Ved å velge utvalg ser du oversikt over møtene.<br/>
+        Bruker du søkefeltet vil du søke blant saker.
+    </div>
+
+    <div data-ng-repeat="u in utvalgsListe | orderBy:'utvnavn'" class="well">
+        <span class="lead">{{ u.utvnavn }}</span>
+        <p>
+            <strong> Seneste møte: </strong> <span class="glyphicon glyphicon-calendar"></span> <a href="#/moter/{{ u.utvsistmoteid }}">{{ u.utvsistmote }}</a>
+            <strong> Alle møter: </strong> <span class="glyphicon glyphicon-list"></span> <a href="#/utvalg/{{ u.utvid }}">Vis oversikt</a>
+        </p>
+    </div>
 </div>
 
-<div data-ng-repeat="u in utvalgsListe | orderBy:'utvnavn'" class="well">
-    <span class="lead">{{ u.utvnavn }}</span>
-    <p>
-        <strong> Seneste møte: </strong> <span class="glyphicon glyphicon-calendar"></span> <a href="#/moter/{{ u.utvsistmoteid }}">{{ u.utvsistmote }}</a>
-        <strong> Alle møter: </strong> <span class="glyphicon glyphicon-list"></span> <a href="#/utvalg/{{ u.utvid }}">Vis oversikt</a>
-    </p>
+<div class="col-lg-4">
+    <div data-varslingsbox></div>
 </div>
+
+<div class="clearfix"></div>
