@@ -1,6 +1,8 @@
 #Politiske saker#
 ##[![Build Status](https://travis-ci.org/telemark/apps-tfk-webstatistikk.png?branch=master)](https://travis-ci.org/telemark/apps-tfk-politiskesaker) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)##
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/apps-tfk-politiskesaker.svg)](https://greenkeeper.io/)
+
 Webløsning for å vise politiske saker og møteprotokoller for utvalgene.
 
 Sidene kan sees på [apps.t-fk.no/politisk](http://apps.t-fk.no/politisk)
